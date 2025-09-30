@@ -1,0 +1,221 @@
+/*CSS GENERALES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(banner2.png);
+    padding: 15px 30px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.logo{
+    max-width: 120px;
+    height: auto;
+}
+body{
+    background: #FAD59A;
+    text-align: center;
+}
+/*.titulo{
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+    background-color: #FCEFCB;
+    font-family: "Allerta Stencil", sans-serif;
+    font-size: 50px;
+    border-radius: 20px;
+}*/
+
+nav{
+    background-color: #FCEFCB;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+nav ul {
+  display: flex; 
+  list-style: none; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Elimina el margen y el padding por defecto de la lista */
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  margin: 0 10px;
+  padding: 10px 10px;
+  font-size: 15px;
+}
+a{
+    text-decoration: none;    
+    padding: 10px;
+}
+
+footer{
+    background-color: #FCEFCB;
+    margin-top: 10px;
+}
+footer ul{
+    display: flex; 
+    list-style: none; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Elimina el margen y el padding por defecto de la lista */
+    padding: 0;
+    margin: 0;
+}
+footer ul li {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.imagen{
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+/*CSS INICIO*/
+.subtitulo{
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #FCEFCB;
+    font-family: "Chelsea Market", system-ui;
+    font-size: 25px;
+}
+.slogan{
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #FCEFCB;
+    font-family: "Chelsea Market", system-ui;
+    font-size: 25px;
+}
+
+/*CSS NUESTRO MENÚ*/
+.subtitulo_menu{
+    background-color: #FCEFCB;
+    border-radius: 10px;
+}
+.subtitulo{
+    border-radius: 10px;
+}
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px; /* ancho definido para poder centrar con margin 0 auto (puede ser otro ancho)*/
+    margin: 0 auto;
+    font-family: "Chelsea Market", system-ui;
+}
+.producto {
+  /* Aquí puedes darle estilo a cada "caja" de producto, como un borde o fondo */
+  border: 10px double #5b460f;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center; /* Centra el texto y la imagen dentro de la caja */
+}
+.producto img {
+  /* Asegura que la imagen no exceda el ancho de su contenedor */
+  width: 350px;
+  height: 250px;
+}
+.search{
+    margin-bottom: 10px;
+}
+
+/*CSS GALERÍA*/
+figure{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px; /* ancho definido para poder centrar con margin 0 auto (puede ser otro ancho)*/
+    margin: 0 auto;
+}
+
+
+/*CSS NOSOTROS*/
+.txt{
+    background-color: #FCEFCB;
+    margin-bottom: 10px;
+    font-family: "Chelsea Market", system-ui;
+}
+
+/*CSS CONTACTO*/
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+.formulario ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.casilla{
+    background-color: #FCEFCB;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Media query para computadoras de escritorio */
+@media (max-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+    header{
+        padding: 10px 20px;
+    }
+    .logo{
+        max-width: 100px;
+    }
+}
+
+/* Media query para tabletas */
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+        padding: 0px;
+    }
+    header{
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+    .logo{
+    margin: 0 10px auto;
+    max-width: 80px;
+    }
+    nav ul {
+        flex-direction: column; /* Apila los enlaces del nav */
+        width: 100%;
+        margin-top: 10px; /* Espacio entre el logo y el nav apilado */
+    }
+    nav ul li {
+        margin: 5px 0;
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+
+    }
+    figure{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    /*.container{
+        width: 100%;
+    }
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }*/
+}
