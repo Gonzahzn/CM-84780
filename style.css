@@ -140,8 +140,8 @@ footer ul li {
 }
 
 .fixed-size-img {
-    width: 75%; /* Ocupa el 100% del ancho de su columna (col-md-4) */
-    height: 600px; /* Define una altura fija para todas las imágenes */
+    width: 60%; /* Ocupa el 100% del ancho de su columna (col-md-4) */
+    height: 350px; /* Define una altura fija para todas las imágenes */
     object-fit: cover; /* La imagen cubrirá el área, recortándose si es necesario, sin distorsionarse */
     border-radius: 20px; /* Opcional */
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 1); /* Opcional */
