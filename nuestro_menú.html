@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,39 +16,74 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="logo2.3.png" width="200px" height="200px" alt="">
+        <img class="header_logo" src="logo2.3.png" alt="">
         <nav>
             <ul>
                 <li><a href="inicio.html">Inicio</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="nosotros.html">Sobre nosotros</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 <main>
-    <section class="menu">
-            <h2 class="subtitulo_menu">Menú:</h2>
+    <!-- <section class="main_menu">
+            <h2 class="main_subtitulo--menu">Menú:</h2>
             <div>
-                <input class="search" type="text" placeholder="Buscar...">
+                <input class="main_search" type="text" placeholder="Buscar...">
                 <button><i class="fa fa-search" aria-hidden="true"></i>/button>
             </div>
-            <article class="producto">
-                <h4 class="subtitulo">Capuccino</h4>
-                <img class="imagen" src="capuccinoo.png" alt="Imagen capuccino">
+            <article class="main_article--producto">
+                <h4 class="main_article--subtitulo subtitulo">Capuccino</h4>
+                <img class="main_article--imagen imagen" src="capuccinoo.png" alt="Imagen capuccino">
                 <p>Café espresso con crema, coronado con un toque de cacao. Cremoso y aromático, ideal para cualquier momento del día.</p>
             </article>
-            <article class="producto">
-                <h4 class="subtitulo">Cookies</h4>
-                <img class="imagen" src="cookies.png" alt="Imagen Cookies">
+            <article class="main_article--producto">
+                <h4 class="main_article--subtitulo subtitulo">Cookies</h4>
+                <img class="main_article--imagen imagen" src="cookies.png" alt="Imagen Cookies">
                 <p>Galletas caseras. Crocantes por fuera y suaves por dentro, perfectas para acompañar tu café.</p>
             </article>
-            <article class="producto">
-                <h4 class="subtitulo">Tostado de Jamón y Queso</h4>
-                <img class="imagen" src="tostadoJyQ.png" alt="Imagen tostado">
+            <article class="main_article--producto">
+                <h4 class="main_article--subtitulo subtitulo">Tostado de Jamón y Queso</h4>
+                <img class="main_article--imagen imagen" src="tostadoJyQ.png" alt="Imagen tostado">
                 <p>Clásico tostado con jamón y queso derretido en pan artesanal. Una opción sabrosa para el desayuno o la merienda.</p>
             </article>
-    </section>
+    </section> -->
+
+    <div class="container">
+        <div class="row justify-content-center align-items-start">
+            <div class="col-12 col-md-6 mb-3 mt-3">
+                <div class="mb-5 bg-menu-personalizado">
+                    Menú:
+                </div>
+
+                <div class="mb-5">
+                    <h4 class="main_article--subtitulo subtitulo">Capuccino</h4>
+                    <img src="capuccinoo.png" class="img-fluid fixed-size-img mb-3" alt="capuccino">
+                    <p>Café espresso con crema, coronado con un toque de cacao. Cremoso y aromático, ideal para cualquier momento del día.</p>
+                </div>
+                <div class="mb-5">
+                    <h4 class="main_article--subtitulo subtitulo">Tostado de Jamón y Queso</h4>
+                    <img src="tostadoJyQ.png" class="img-fluid fixed-size-img mb-3" alt="Tostado JyQ">
+                    <p>Clásico tostado con jamón y queso derretido en pan artesanal. Una opción sabrosa para el desayuno o la merienda.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3 mt-3">
+                <div class="mb-5">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="mb-5">
+                    <h4 class="main_article--subtitulo subtitulo">Cookies</h4>
+                    <img src="cookies.png" class="img-fluid fixed-size-img mb-3" alt="coockies">
+                    <p>Galletas caseras. Crocantes por fuera y suaves por dentro, perfectas para acompañar tu café.</p>
+                </div>
+            </div>          
+        </div>
+        <!-- </div> -->
+    </div>
 </main>      
 <footer>
     <ul>

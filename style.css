@@ -14,7 +14,7 @@ header{
     margin-bottom: 10px;
     width: 100%;
 }
-.logo{
+.header_logo{
     max-width: 120px;
     height: auto;
 }
@@ -87,7 +87,7 @@ footer ul li {
     font-family: "Chelsea Market", system-ui;
     font-size: 25px;
 }
-.slogan{
+.main_slogan{
     margin-bottom: 10px;
     text-align: center;
     background-color: #FCEFCB;
@@ -96,69 +96,90 @@ footer ul li {
 }
 
 /*CSS NUESTRO MENÚ*/
-.subtitulo_menu{
+.main_subtitulo--menu{
     background-color: #FCEFCB;
     border-radius: 10px;
 }
-.subtitulo{
+/*.subtitulo{
     border-radius: 10px;
-}
-.menu{
+}*/
+/* .main_menu{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     max-width: 800px; /* ancho definido para poder centrar con margin 0 auto (puede ser otro ancho)*/
-    margin: 0 auto;
+    /* margin: 0 auto;
+    font-family: "Chelsea Market", system-ui;
+} */
+.bg-menu-personalizado{
+    background-color: #FCEFCB;
+    font-size: 20px;
+    border-radius: 50px;
     font-family: "Chelsea Market", system-ui;
 }
-.producto {
+.main_article--producto {
   /* Aquí puedes darle estilo a cada "caja" de producto, como un borde o fondo */
   border: 10px double #5b460f;
   border-radius: 10px;
   padding: 15px;
   text-align: center; /* Centra el texto y la imagen dentro de la caja */
 }
-.producto img {
+.main_article--imagen{
   /* Asegura que la imagen no exceda el ancho de su contenedor */
   width: 350px;
   height: 250px;
 }
-.search{
+.main_search{
     margin-bottom: 10px;
 }
 
 /*CSS GALERÍA*/
-figure{
+.main_figure--imgs{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     max-width: 800px; /* ancho definido para poder centrar con margin 0 auto (puede ser otro ancho)*/
     margin: 0 auto;
 }
+.main_figure--imagen {
+    width: 70%; /* Por defecto, ocuparán todo el espacio disponible */
+    height: 450px; /* Puedes mantener una altura fija si quieres que todas sean iguales */
+    border-radius: 25px; /* Tu estilo de borde redondeado */
+    margin-bottom: 10px; /* Tu margen */
+}
+
+.fixed-size-img {
+    width: 75%; /* Ocupa el 100% del ancho de su columna (col-md-4) */
+    height: 600px; /* Define una altura fija para todas las imágenes */
+    object-fit: cover; /* La imagen cubrirá el área, recortándose si es necesario, sin distorsionarse */
+    border-radius: 20px; /* Opcional */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 1); /* Opcional */
+    border: 10px double #5b460f;
+}
 
 
 /*CSS NOSOTROS*/
-.txt{
+.main_txt{
     background-color: #FCEFCB;
     margin-bottom: 10px;
     font-family: "Chelsea Market", system-ui;
 }
 
 /*CSS CONTACTO*/
-.formulario{
+.main_formulario{
     display: flex;
     justify-content: center;
 }
-.formulario ul {
+/*.main_formulario ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-.casilla{
+.main_form--casilla{
     background-color: #FCEFCB;
     padding: 10px;
     border-radius: 10px;
-}
+}*/
 
 /* Media query para computadoras de escritorio */
 @media (max-width: 1024px) {
@@ -168,7 +189,7 @@ figure{
     header{
         padding: 10px 20px;
     }
-    .logo{
+    .header_logo{
         max-width: 100px;
     }
 }
@@ -184,38 +205,42 @@ figure{
         justify-content: center;
         padding: 10px;
     }
-    .logo{
+    .header_logo{
     margin: 0 10px auto;
     max-width: 80px;
     }
     nav ul {
-        flex-direction: column; /* Apila los enlaces del nav */
+        flex-direction: column;
         width: 100%;
-        margin-top: 10px; /* Espacio entre el logo y el nav apilado */
+        margin-top: 10px;
     }
     nav ul li {
         margin: 5px 0;
         padding: 8px 0;
         border-bottom: 1px solid #eee;
     }
-    .menu{
+    .main_menu{
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 10px;
-
     }
-    figure{
+    .main_figure--imgs{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
         padding: 10px;
+        align-items: center;
     }
-    /*.container{
-        width: 100%;
+    .main_figure--imagen {
+        max-width: 100%; 
+        height: auto;
     }
-    .nav {
-        flex-direction: row;
-        justify-content: space-between;
-    }*/
+    .subtitulo{
+        font-size: 18px;
+    }
+    .main_slogan{
+        font-size: 18px;
+    }
+
 }
