@@ -9,7 +9,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url(banner2.png);
+    background-image: url(img/banner2.png);
     padding: 15px 30px;
     margin-bottom: 10px;
     width: 100%;
@@ -22,22 +22,13 @@ body{
     background: #FAD59A;
     text-align: center;
 }
-/*.titulo{
-    margin-bottom: 10px;
-    padding: 10px;
-    text-align: center;
-    text-decoration: underline;
-    background-color: #FCEFCB;
-    font-family: "Allerta Stencil", sans-serif;
-    font-size: 50px;
-    border-radius: 20px;
-}*/
 
 nav{
+    display: flex;
     background-color: #FCEFCB;
     margin-bottom: 10px;
     margin-top: 10px;
-    border-radius: 10px;
+    border-radius: 100px;
 }
 
 nav ul {
