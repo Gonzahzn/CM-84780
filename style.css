@@ -65,11 +65,6 @@ footer ul li {
   font-size: 20px;
 }
 
-.imagen{
-    border-radius: 25px;
-    margin-bottom: 10px;
-}
-
 /*CSS INICIO*/
 .subtitulo{
     margin-bottom: 10px;
@@ -86,6 +81,10 @@ footer ul li {
     font-family: "Chelsea Market", system-ui;
     font-size: 25px;
 }
+.main_imagen{
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
 
 /*CSS NUESTRO MENÚ*/
 .main_section--titulo{
@@ -95,58 +94,14 @@ footer ul li {
     padding: 5px 50px;
     font-family: "Chelsea Market", system-ui;
 }
-.main_subtitulo--menu{
-    background-color: #FCEFCB;
-    border-radius: 10px;
-}
-/*.subtitulo{
-    border-radius: 10px;
-}*/
-/* .main_menu{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 800px; /* ancho definido para poder centrar con margin 0 auto (puede ser otro ancho)*/
-    /* margin: 0 auto;
-    font-family: "Chelsea Market", system-ui;
-} */
 .bg-menu-personalizado{
     background-color: #FCEFCB;
     font-size: 20px;
     border-radius: 50px;
     font-family: "Chelsea Market", system-ui;
 }
-.main_article--producto {
-  /* Aquí puedes darle estilo a cada "caja" de producto, como un borde o fondo */
-  border: 10px double #5b460f;
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center; /* Centra el texto y la imagen dentro de la caja */
-}
-.main_article--imagen{
-  /* Asegura que la imagen no exceda el ancho de su contenedor */
-  width: 350px;
-  height: 250px;
-}
-.main_search{
-    margin-bottom: 10px;
-}
 
 /*CSS GALERÍA*/
-.main_figure--imgs{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 800px; /* ancho definido para poder centrar con margin 0 auto (puede ser otro ancho)*/
-    margin: 0 auto;
-}
-.main_figure--imagen {
-    width: 70%; /* Por defecto, ocuparán todo el espacio disponible */
-    height: 450px; /* Puedes mantener una altura fija si quieres que todas sean iguales */
-    border-radius: 25px; /* Tu estilo de borde redondeado */
-    margin-bottom: 10px; /* Tu margen */
-}
-
 .fixed-size-img {
     width: 60%; /* Ocupa el 100% del ancho de su columna (col-md-4) */
     height: 350px; /* Define una altura fija para todas las imágenes */
@@ -165,20 +120,6 @@ footer ul li {
 }
 
 /*CSS CONTACTO*/
-.main_formulario{
-    display: flex;
-    justify-content: center;
-}
-/*.main_formulario ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.main_form--casilla{
-    background-color: #FCEFCB;
-    padding: 10px;
-    border-radius: 10px;
-}*/
 
 /* Media query para computadoras de escritorio */
 @media (max-width: 1024px) {
