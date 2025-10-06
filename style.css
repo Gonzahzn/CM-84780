@@ -97,17 +97,26 @@ footer ul li {
 }
 
 /*CSS NUESTRO MENÚ*/
-.main_section--titulo{
+.main__section-titulo{
     display: inline-block;
     background-color: #FCEFCB;
     border-radius: 50px;
     padding: 5px 50px;
     font-family: "Roboto Condensed", sans-serif;
 }
+.main__article-subtitulo{
+    background-color: #FCEFCB;
+    border-radius: 25px;
+    padding: 5px;
+}
 .bg-menu-personalizado{
     background-color: #FCEFCB;
     font-size: 20px;
     border-radius: 50px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+article p{
+    font-size: 18px;
     font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -217,5 +226,8 @@ footer ul li {
     }
     .main__destacados{
         font-size: 20px;
+    }
+    article p{
+    font-size: 15px;
     }
 }
