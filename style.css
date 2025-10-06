@@ -168,6 +168,13 @@ footer ul li {
 }
 
 /*CSS CONTACTO*/
+.form-label{
+    display: inline-block;
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #FCEFCB;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
 
 /* Media query para computadoras de escritorio */
 @media (max-width: 1024px) {
