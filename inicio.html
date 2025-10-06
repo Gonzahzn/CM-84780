@@ -12,21 +12,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Café Gonquis</title>
 </head>
 <body>
     <header>
-        <img class="header_logo" src="img/logo2.3.png" alt="logo">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
+                <a class="navbar-brand" href="inicio.html">
+                    <img class="header_logo" src="img/logo2.3.png" alt="logo">
+                </a>
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="inicio.html">Inicio</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="nuestro_menú.html">Servicios</a>
                         </li>
@@ -55,6 +55,31 @@
         <img class="main_imagen" src="img/café_Gonquis.png"
          alt="Imagen de fondo café">
     </div>
+    <section class="main__destacados container mt-3">
+    <h2 class="text-center mb-4 subtitulo">Nuestros Favoritos</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="img/latte.png" class="card-img-top" alt="Café de especialidad">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Latte</h5>
+                    <p class="card-text">Café suave con abundante leche vaporizada y una capa ligera de espuma.</p>
+                    <a href="nuestro_menú.html" class="btn btn-outline-dark">Ver Menú</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="img/brownie.png" class="card-img-top" alt="Café de especialidad">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Brownies</h5>
+                    <p class="card-text">Suave por dentro y crocante por fuera, con intenso sabor a chocolate.</p>
+                    <a href="nuestro_menú.html" class="btn btn-outline-dark">Ver Menú</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 </main>       
 <footer>
     <ul>

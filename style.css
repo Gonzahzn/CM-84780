@@ -92,10 +92,13 @@ footer ul li {
     font-size: 25px;
 }
 .main_imagen{
-    border-radius: 25px;
+    /* border-radius: 25px; */
     margin-bottom: 10px;
-    width: 350px; 
-    height: 250px;
+    width: 100%; 
+    height: 350px;
+}
+.main__destacados{
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 /*CSS NUESTRO MENÚ*/
