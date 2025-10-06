@@ -14,7 +14,7 @@ header{
     margin-bottom: 10px;
     width: 100%;
 }
-.header_logo{
+.header__logo{
     max-width: 120px;
     height: auto;
 }
@@ -66,7 +66,7 @@ footer ul li {
 }
 
 /*CSS INICIO*/
-.main__subtitulo--inicio{
+.main__subtitulo--p{
     margin-bottom: 10px;
     text-align: center;
     background-color: #FCEFCB;
@@ -129,8 +129,13 @@ article p{
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 1);
     border: 10px double #5b460f;
 }
-.main_subtitulo{
-    padding: 0 10px;
+.main__introduccion{
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #FCEFCB;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 25px;
+    padding: 5px 10px;
 }
 
 
@@ -204,7 +209,7 @@ article p{
         justify-content: center;
         padding: 10px;
     }
-    .header_logo{
+    .header__logo{
     margin: 0 10px auto;
     max-width: 80px;
     }
@@ -229,5 +234,8 @@ article p{
     }
     article p{
     font-size: 15px;
+    }
+    .main__introduccion{
+        font-size: 20px;
     }
 }
