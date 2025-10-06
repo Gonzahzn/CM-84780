@@ -194,37 +194,45 @@ footer ul li {
     margin: 0 10px auto;
     max-width: 80px;
     }
-    nav ul {
+    /* nav ul {
         flex-direction: column;
         width: 100%;
         margin-top: 10px;
-    }
+    } */
     nav ul li {
         margin: 5px 0;
         padding: 8px 0;
         border-bottom: 1px solid #eee;
     }
-    .main_menu{
+    /* .main_menu{
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 10px;
-    }
-    .main_figure--imgs{
+    } */
+    /* .main_figure--imgs{
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 10px;
         align-items: center;
-    }
-    .main_figure--imagen {
+    } */
+    /* .main_figure--imagen {
         max-width: 100%; 
         height: auto;
-    }
+    } */
     .subtitulo{
         font-size: 18px;
     }
     .main_slogan{
         font-size: 18px;
+    }
+    .main__sucursales--direcciones{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .main__sucursales--maps{
+        width: 100%;
+        text-align: center;
     }
 }
