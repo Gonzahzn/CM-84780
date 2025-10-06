@@ -1,7 +1,0 @@
-.fixed-size-img {
-    width: 50%; /* Ocupa el 100% del ancho de su columna (col-md-4) */
-    height: 450px; /* Define una altura fija para todas las imágenes */
-    object-fit: cover; /* La imagen cubrirá el área, recortándose si es necesario, sin distorsionarse */
-    border-radius: 10px; /* Opcional */
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Opcional */
-}
