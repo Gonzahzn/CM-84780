@@ -126,7 +126,7 @@ footer ul li {
 
 
 /*CSS NOSOTROS*/
-.main_txt{
+.main__txt{
     background-color: #FCEFCB;
     margin-bottom: 10px;
     text-align: center;
@@ -142,19 +142,19 @@ footer ul li {
     font-family: "Roboto Condensed", sans-serif;
     padding-top: 10px;
 }
-.main__sucursales--direcciones{
+.main__sucursales-direcciones{
     display: flex;
     justify-content: space-between;
     align-items: start;
     padding: 20px;
 }
-.main__sucursales--info{
+.main__sucursales-info{
     width: 55%;
 }
-.main__sucursales--maps{
+.main__sucursales-maps{
     width: 40%;
 }
-.main__sucursales--maps img{
+.main__sucursales-maps img{
     max-width: 100%;
     height: auto;
     display: block;
@@ -207,14 +207,15 @@ footer ul li {
     .main__slogan{
         font-size: 20px;
     }
-    .main__sucursales--direcciones{
+    .main__sucursales-direcciones{
         flex-direction: column;
         padding: 10px;
     }
-    .main__sucursales--maps{
+    .main__sucursales-maps{
         width: 100%;
         text-align: center;
     }
     .main__destacados{
         font-size: 20px;
+    }
 }
