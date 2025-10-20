@@ -81,6 +81,12 @@ footer ul li {
 .main__subtitulo--p__slogan, .main__slogan__slogan {
   padding: 5px 10px;
 }
+.main__subtitulo--p .main__mascota-img, .main__slogan .main__mascota-img {
+  height: 60px;
+  width: auto;
+  vertical-align: middle;
+  margin-left: 5px;
+}
 .main__imagen {
   margin-bottom: 10px;
   width: 100%;
