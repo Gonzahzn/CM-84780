@@ -1,5 +1,56 @@
+// Variables generales
+$bg-claro: #FCEFCB;
+$bg-oscuro: #FAD59A;
+$bg-img: url(img/banner2.png);
+$color-texto: black;
+$color-hover: brown;
+$font: "Roboto Condensed", sans-serif;
+$margin-vertical: 10px;
 
-$primary-color: #3498db;
+//Estilos y resets
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: $primary-color;
+    background-color: $bg-oscuro;
+    text-align: center;
+}
+//Header
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: $bg-img;
+    padding: 15px 30px;
+    margin-bottom: $margin-vertical;
+    width: 100%;
+
+    &__logo { // Anidamiento: .header__logo
+        max-width: 120px;
+        height: auto;
+    }
+}
+
+nav {
+    display: flex;
+    background-color: $bg-claro;
+    margin-bottom: $margin-vertical;
+    margin-top: $margin-vertical;
+    border-radius: 30px;
+
+    ul li {
+        margin: 0 10px;
+        font-size: 15px;
+    }
+
+    .nav-link {
+        color: $color-texto;
+
+        &:hover { // Anidamiento de pseudoclase
+            color: $color-hover;
+            font-size: 25px;
+        }
+    }
 }

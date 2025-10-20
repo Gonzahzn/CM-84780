@@ -1,3 +1,45 @@
-body {
-  background-color: #3498db;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background-color: #FAD59A;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(img/banner2.png);
+  padding: 15px 30px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+header__logo {
+  max-width: 120px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  background-color: #FCEFCB;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 30px;
+}
+nav ul li {
+  margin: 0 10px;
+  font-size: 15px;
+}
+nav .nav-link {
+  color: black;
+}
+nav .nav-link:hover {
+  color: brown;
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=style.css.map */
