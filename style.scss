@@ -54,3 +54,226 @@ nav {
         }
     }
 }
+//footer
+footer {
+    background-color: $bg-claro;
+    margin-top: $margin-vertical;
+    font-family: $font;
+
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin: 0 10px;
+            padding: 10px;
+            font-size: 20px;
+        }
+    }
+
+    &__redes a { // Anidamiento: .footer__redes a
+        color: $color-texto;
+    }
+
+    &__redes:hover a { // Anidamiento de pseudoclase
+        color: $color-hover;
+    }
+}
+//Estílos páginas
+.main {
+    /*Inicio */
+    &__subtitulo--p, 
+    &__slogan {
+        margin-bottom: $margin-vertical;
+        text-align: center;
+        background-color: $bg-claro;
+        font-family: $font;
+        font-size: 25px;
+        border-radius: 10px;
+        
+        &__slogan {
+             padding: 5px 10px;
+        }
+        
+        &__subtitulo--p { // Estilo específico para el subtítulo
+             // No hay estilos únicos más allá de los comunes
+        }
+    }
+
+    &__imagen {
+        margin-bottom: $margin-vertical;
+        width: 100%;
+        height: 350px;
+    }
+
+    &__destacados {
+        padding-top: $margin-vertical;
+        text-align: center;
+        background-color: $bg-claro;
+        font-family: $font;
+        font-size: 25px;
+        border-radius: 10px;
+    }
+
+    /*Nuestro menú*/
+    &__section-titulo {
+        display: inline-block;
+        background-color: $bg-claro;
+        border-radius: 50px;
+        padding: 5px 50px;
+        font-family: $font;
+    }
+
+    &__article-subtitulo {
+        background-color: $bg-claro;
+        border-radius: 25px;
+        padding: 5px;
+    }
+    
+    // Estilos párrafos en artículos
+    article p {
+        font-size: 18px;
+        font-family: $font;
+    }
+    
+    .bg-menu-personalizado {
+        background-color: $bg-claro;
+        font-size: 20px;
+        border-radius: 50px;
+        font-family: $font;
+    }
+
+    /* Galería */
+    &__introduccion {
+        margin-bottom: $margin-vertical;
+        text-align: center;
+        background-color: $bg-claro;
+        font-family: $font;
+        font-size: 25px;
+        padding: 5px 10px;
+    }
+
+    .fixed-size-img {
+        width: 60%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 1);
+        border: 10px double #5b460f;
+    }
+
+    /*Nosotros*/
+    &__txt {
+        background-color: $bg-claro;
+        margin-bottom: $margin-vertical;
+        text-align: center;
+        font-family: $font;
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 0 10px;
+    }
+
+    &__sucursales {
+        padding-left: 10px;
+        text-align: left;
+        background-color: $bg-claro;
+        font-family: $font;
+        padding-top: 10px;
+        
+        &-direcciones {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            padding: 20px;
+        }
+
+        &-info {
+            width: 55%;
+        }
+
+        &-maps {
+            width: 40%;
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 10px;
+                border: 5px solid $bg-oscuro;
+            }
+        }
+    }
+}
+
+/*Contacto */
+.form-label {
+    display: inline-block;
+    font-family: $font;
+    background-color: $bg-claro;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+//Media queries
+// Media query para computadoras de escritorio
+@media (max-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+    header {
+        padding: 10px 20px;
+
+        .header__logo {
+            max-width: 100px;
+        }
+    }
+}
+
+// Media query para tabletas y móviles
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+        padding: 0px;
+    }
+    
+    header {
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        
+        .header__logo {
+            margin: 0 10px auto;
+            max-width: 80px;
+        }
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .main {
+        &__slogan,
+        &__destacados,
+        &__introduccion {
+            font-size: 20px;
+        }
+
+        &__sucursales-direcciones {
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        &__sucursales-maps {
+            width: 100%;
+            text-align: center;
+        }
+        
+        article p {
+            font-size: 15px;
+        }
+    }
+}
