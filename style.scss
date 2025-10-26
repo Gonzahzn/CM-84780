@@ -6,8 +6,8 @@ $color-texto: black;
 $color-hover: brown;
 $font: "Roboto Condensed", sans-serif;
 $margin-vertical: 10px;
-$rad-gradient-osc: radial-gradient(circle, #FFE3BB, #FFD586 );
-$rad-gradient-cl: radial-gradient(circle, #FCEFCB, #FAEAB1);
+$rad-gradient-osc: radial-gradient(circle, #FCEFCB, #FFC69D );
+$rad-gradient-cl: radial-gradient(circle, #FCEFCB, #FDEB9E);
 
 //Estilos y resets
 *{
@@ -87,13 +87,12 @@ footer {
 //Estílos páginas
 .main {
     /*Inicio */
-    &__subtitulo--p, 
+    &__titulo--h1, 
     &__slogan {
         margin-bottom: $margin-vertical;
         text-align: center;
         background-image: $rad-gradient-cl;
         font-family: $font;
-        font-size: 25px;
         border-radius: 10px;
         
         &__slogan {
