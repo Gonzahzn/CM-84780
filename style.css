@@ -40,7 +40,7 @@ nav .nav-link {
 }
 nav .nav-link:hover {
   color: brown;
-  font-size: 25px;
+  transform: scale(1.4);
 }
 
 footer {
@@ -74,11 +74,13 @@ footer ul li {
   margin-bottom: 10px;
   text-align: center;
   background-image: radial-gradient(circle, #FCEFCB, #FDEB9E);
+  font-size: 25px;
   font-family: "Roboto Condensed", sans-serif;
   border-radius: 10px;
 }
 .main__titulo--h1__slogan, .main__slogan__slogan {
   padding: 5px 10px;
+  font-size: 50px;
 }
 .main__titulo--h1 .main__mascota-img, .main__slogan .main__mascota-img {
   height: 60px;

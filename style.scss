@@ -52,7 +52,7 @@ nav {
 
         &:hover { // Anidamiento de pseudoclase
             color: $color-hover;
-            font-size: 25px;
+            transform: scale(1.4);
         }
     }
 }
@@ -92,11 +92,13 @@ footer {
         margin-bottom: $margin-vertical;
         text-align: center;
         background-image: $rad-gradient-cl;
+        font-size: 25px;
         font-family: $font;
         border-radius: 10px;
         
         &__slogan {
-             padding: 5px 10px;
+            padding: 5px 10px;
+            font-size: 50px;
         }
         .main__mascota-img {
             height: 60px;
